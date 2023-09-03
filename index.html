@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- Lang significa linguagem ou seja qual é o idioma da página -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Academia APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+            background-color: #FF383E;
+            margin: 0;
+            padding: 0;
+            font-family: 'Anton';
+        }
+        h1{
+            text-align: left;
+            font-size: 75px;
+            font-family: 'Anton', sans-serif;
+            margin: 0;
+        }
+
+        .fonte-vermelha{
+            margin-top: 100px;
+            color: #FF383E;
+            font-size: 75px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 75px;
+        }
+        .fonte-branca{
+            color: #FFF;
+            font-size: 75px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 75px;
+        }
+        header{
+            background-image: url("imagem_topo.png");
+            background-position: center;
+            height: 550px;
+        }
+
+        .topo {
+            text-align:center;
+        }
+        .img_logo{
+            margin-top: 60px;
+            width: 380px;
+        }
+
+        .texto-top{
+            width: 404px;
+            margin: auto;
+        }
+
+        button{
+            width: 249px;
+            height: 83px;
+            background-color: #000000;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 45px;
+        }
+        .button-fonte-grande{
+            color: #FFF;
+            text-align: center;
+            font-family: Anton;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 45px;
+        }
+        h2{
+            color: #FFF;
+            text-align: center;
+            font-family: Anton;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 45px;
+        }
+        .alinhamento-centro{
+            width: 404px;
+            margin: auto;
+            text-align:center;
+        }
+        footer{
+            background-image: url("fundo_footer.png");
+            padding-top: 1px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        p{
+            color: #FFFFFF;
+            font-family: "M PLUS Rounded 1c";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        p .negrito{
+            font-weight: 700;
+        }
+
+        .titulo-footer{
+            margin-top: 76px;
+        }
+
+
+    </style>
+
+    <header>
+        <div class="topo">
+            <img class="img_logo" src="logo.png">
+            <div class="texto-top">
+                <h1 class="fonte-vermelha">PREPARE-SE PARA MUDAR</h1>
+                <h1 class="fonte-branca">PARA MELHOR</h1>
+            </div>
+        </div>
+    </header>   
+
+    <main>
+        <h2 class="fonte-branca">ESCOLHAS MAIS SAUDÁVEIS</h2>
+            <div class="alinhamento-centro">
+                <button class="button-fonte-grande" onclick="window.open('./cadastro.html')">Cadastre-se</button>
+                <button class="button-fonte-grande" onclick="window.open('./novo_treino.html')">Novo Treino</button>
+                <button class="button-fonte-grande" onclick="window.open('./treinos.html')">Treinos</button>
+            </div>
+    </main>
+    <footer>
+        <div class="texto-top">
+            <h1 class="fonte-vermelha">VAMOS FALAR SOBRE SUA SAÚDE</h1>
+            <div style="margin-top: 35px;">
+                <p>
+                    <strong class="negrito">CenterFit</strong>  <br> Avenida Presidente Kennedy, 397, Panambi, RS, Brazil
+                </p>
+                <p>
+                    <strong class="negrito">Tel.</strong>Tel. (55) 99133-9517 <br><strong class="negrito">E-mail:</strong> academiacenterfit@yahoo.com <br><strong class="negrito">Social:</strong> @centerfit_academiafuncional
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align: right;">
+            <a href="https://api.whatsapp.com/send?phone=5555999772707"><img src="whatsapp.png"></a>
+        </div>
+        
+        
+
+    </footer>
+</body>
+</html>
