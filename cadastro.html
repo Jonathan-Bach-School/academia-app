@@ -7,114 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 <body>
-    <style>
-        body{
-            background-color: #FF383E;
-            margin: 0;
-            padding: 0;
-            font-family: 'Anton';
-        }
-        h1{
-            text-align: left;
-            font-size: 75px;
-            font-family: 'Anton', sans-serif;
-            margin: 0;
-        }
-
-        .fonte-vermelha{
-            margin-top: 100px;
-            color: #FF383E;
-            font-size: 75px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 75px;
-        }
-        .fonte-branca{
-            color: #FFF;
-            font-family: 'Anton';
-            font-size: 75px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 75px;
-        }
-        header{
-            background-image: url("imagem_topo.png");
-            background-position: center;
-            height: 550px;
-        }
-
-        .topo {
-            text-align:center;
-        }
-        .img_logo{
-            margin-top: 60px;
-            width: 380px;
-        }
-
-        .texto-top{
-            width: 404px;
-            margin: auto;
-        }
-
-        button{
-            width: 249px;
-            height: 83px;
-            background-color: #000000;
-            border: none;
-            cursor: pointer;
-            margin: 0px 0px 0px 45px;
-        }
-        .button-fonte-grande{
-            color: #FFF;
-            text-align: center;
-            font-family: Anton;
-            font-size: 35px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 45px;
-        }
-        h2{
-            color: #FFF;
-            text-align: center;
-            font-family: Anton;
-            font-size: 45px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 45px;
-        }
-        .alinhamento-centro{
-            width: 404px;
-            margin: auto;
-            text-align:center;
-        }
-        footer{
-            background-image: url("fundo_footer.png");
-            padding-top: 1px;
-            background-repeat: no-repeat;
-            background-size: 100%;
-        }
-
-        p{
-            color: #FFFFFF;
-            font-family: "M PLUS Rounded 1c";
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 30px;
-        }
-        p .negrito{
-            font-weight: 700;
-        }
-
-        .titulo-footer{
-            margin-top: 76px;
-        }
-
-
-    </style>
-
     <header>
         <div class="topo">
             <img class="img_logo" src="logo.png">
@@ -127,9 +22,9 @@
     <main>
         <h2 class="fonte-branca">ESCOLHAS MAIS SAUDÁVEIS</h1>
             <div class="alinhamento-centro">
-                <button class="button-fonte-grande" onclick="window.open('./cadastro.html')">Cadastre-se</button>
-                <button class="button-fonte-grande" onclick="window.open('./novo_treino.html')">Novo Treino</button>
-                <button class="button-fonte-grande" onclick="window.open('./treinos.html')">Treinos</button>
+                <button class="button-fonte-grande" onclick="window.open('./cadastro.html', '_self')">Cadastre-se</button>
+                <button class="button-fonte-grande" onclick="window.open('./novo_treino.html', '_self')">Novo Treino</button>
+                <button class="button-fonte-grande" onclick="window.open('./treinos.html', '_self')">Treinos</button>
             </div>  
     </main>
     <footer>
