@@ -19,6 +19,7 @@ h1{
     font-weight: 400;
     line-height: 75px;
 }
+
 .fonte-branca{
     color: #FFF;
     font-size: 75px;
@@ -26,10 +27,20 @@ h1{
     font-weight: 400;
     line-height: 75px;
 }
+
+.fonte-margin-paginas{
+    margin-top: 31px;
+}
+
 header{
     background-image: url("../imagens/imagem_topo.png");
     background-position: center;
     height: 550px;
+}
+
+.header-paginas{
+    height: 331px;
+    background-size: cover;
 }
 
 .topo {
@@ -62,6 +73,17 @@ button{
     font-weight: 400;
     line-height: 45px;
 }
+
+.button-fonte-pequena{
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 h2{
     color: #FFF;
     text-align: center;
@@ -98,3 +120,32 @@ p .negrito{
 .titulo-footer{
     margin-top: 76px;
 }
+
+input{
+    margin-bottom: 23px;
+    width: 332px;
+    height: 60px;
+    background: #000000;
+    border: #000000;
+    border-radius: none;
+    color: #FFFFFF;
+    padding-left: 35px;
+
+    color: #FFF;
+    font-family: Anton;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+input::placeholder{
+    color: #FFF;
+}
+

@@ -10,22 +10,27 @@
     <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 <body>
-    <header>
+    <header class="header-paginas">
         <div class="topo">
-            <img class="img_logo" src="logo.png">
+            <a href="./index.html">
+                <img class="img_logo" src="imagens/logo.png">
+            </a>
             <div class="texto-top">
-                <h1 class="fonte-vermelha">CADASTRE-SE</h1>
+                <h1 class="fonte-vermelha fonte-margin-paginas">CADASTRE-SE</h1>
             </div>
         </div>
     </header>   
 
     <main>
-        <h2 class="fonte-branca">ESCOLHAS MAIS SAUDÁVEIS</h1>
-            <div class="alinhamento-centro">
-                <button class="button-fonte-grande" onclick="window.open('./cadastro.html', '_self')">Cadastre-se</button>
-                <button class="button-fonte-grande" onclick="window.open('./novo_treino.html', '_self')">Novo Treino</button>
-                <button class="button-fonte-grande" onclick="window.open('./treinos.html', '_self')">Treinos</button>
-            </div>  
+        <h2 class="fonte-branca">Crie sua conta</h2>
+        <div class="alinhamento-centro">
+            <form>
+                <input id="nome" type="text" placeholder="Nome">
+                <input id="email" type="email" placeholder="Email">
+                <input id="senha" type="password" placeholder="Senha">
+            </form>
+            <button class="button-fonte-pequena" onclick="salvarUsuario()">CADASTRAR</button>
+        </div>  
     </main>
     <footer>
         <div class="texto-top ">
@@ -41,11 +46,22 @@
         </div>
 
         <div style="text-align: right;">
-            <a href="https://api.whatsapp.com/send?phone=5555999772707"><img src="whatsapp.png"></a>
+            <a href="https://api.whatsapp.com/send?phone=5555999772707"><img src="imagens/whatsapp.png"></a>
         </div>
         
         
 
     </footer>
+
+    <script>
+        function salvarUsuario(){
+            nome = document.getElementById("nome").value;
+            email = document.getElementById("email").value;
+            senha = document.getElementById("senha").value;
+            localStorage.setItem(nome, '{"nome":"'+ nome +'", "email":"'+email+'", "senha":"'+senha+'"}')
+            alert("O Usuário "+ nome +" foi salvo com sucesso!");
+            console.log(localStorage.getItem(nome))
+        }
+    </script>
 </body>
 </html>
