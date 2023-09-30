@@ -16,18 +16,36 @@
                 <img class="img_logo" src="imagens/logo.png">
             </a>
             <div class="texto-top">
-                <h1 class="fonte-vermelha fonte-margin-paginas">NOVO TREINO</h1>
+                <h1 class="fonte-vermelha fonte-margin-paginas">AGENDA</h1>
             </div>
         </div>
     </header>   
 
     <main>
-        <h2 class="fonte-branca">ESCOLHAS MAIS SAUDÁVEIS</h2>
-            <div class="alinhamento-centro">
-                <button class="button-fonte-grande" onclick="window.open('./cadastro.html', '_self')">Cadastre-se</button>
-                <button class="button-fonte-grande" onclick="window.open('./novo_treino.html', '_self')">Novo Treino</button>
-                <button class="button-fonte-grande" onclick="window.open('./treinos.html', '_self')">Treinos</button>
+        <h2 class="fonte-branca">Escolha o melhor horario para voce!</h2>
+        <div class="alinhamento-centro">
+            <form>
+                <input id="nome" type="text" placeholder="Nome">
+                <input id="data" type="date">
+                <input id="hora" type="time">
+                <select id="treino">
+                    <option value="Musculacao">Musculacao</option>
+                    <option value="Aerobico">Aerobico</option>
+                </select>
+            </form>
+            <button class="button-fonte-pequena" onclick="salvarNaAgenda()">CADASTRAR</button>
+        </div>  
+
+
+        <div id="modal-cadastro" class="modal">
+            <div class="modal-body">
+                <button onclick="fechar()">X</button>
+                <a href="./novo_treino.html">
+                    <h2 class="vermelha">OBRIGADO POR SE CADASTRAR!</h2>
+                    <h2>VAMOS PARA O PRIMEIRO TREINO</h2>
+                </a>
             </div>
+        </div>
     </main>
     <footer>
         <div class="texto-top ">
@@ -45,9 +63,7 @@
         <div style="text-align: right;">
             <a href="https://api.whatsapp.com/send?phone=5555999772707"><img src="imagens/whatsapp.png"></a>
         </div>
-        
-        
-
     </footer>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

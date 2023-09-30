@@ -131,7 +131,6 @@ input{
     color: #FFFFFF;
     padding-left: 35px;
 
-    color: #FFF;
     font-family: Anton;
     font-size: 23px;
     font-style: normal;
@@ -139,10 +138,22 @@ input{
     line-height: normal;
 }
 
-input:focus{
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
+select{
+    margin-bottom: 23px;
+    width: 332px;
+    height: 60px;
+    background: #000000;
+    border: #000000;
+    border-radius: none;
+    color: #FFFFFF;
+    padding-left: 35px;
+
+    font-family: Anton;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-sizing: content-box;
 }
 
 input::placeholder{
