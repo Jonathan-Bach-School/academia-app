@@ -218,3 +218,25 @@ input::placeholder{
     margin-top: 15px !important;
     color: #FF383E !important;
 }
+
+table {
+    color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+tbody {
+    background-color: #000000;
+}
+
+tbody td{
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
+tbody tr:first-child td{
+    border-top: none !important;
+}
+
+tbody tr td:first-child {
+    border-left: none !important;
+}
