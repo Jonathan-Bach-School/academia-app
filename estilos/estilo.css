@@ -97,6 +97,7 @@ h2{
     width: 404px;
     margin: auto;
     text-align:center;
+    padding: 30px;
 }
 footer{
     background-image: url("../imagens/fundo_footer.png");
@@ -222,6 +223,8 @@ input::placeholder{
 table {
     color: #FFFFFF;
     border-collapse: collapse;
+    margin: auto;
+    text-align:center;
 }
 
 tbody {
@@ -239,4 +242,13 @@ tbody tr:first-child td{
 
 tbody tr td:first-child {
     border-left: none !important;
+}
+
+th{
+    font-size: 32px;
+    padding: 10px 10px 0px 10px;
+}
+
+td {
+    font-size: 14px;
 }
