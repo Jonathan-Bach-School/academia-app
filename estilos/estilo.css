@@ -1,0 +1,254 @@
+body{
+    background-color: #FF383E;
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton';
+}
+h1{
+    text-align: left;
+    font-size: 75px;
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+}
+
+.fonte-vermelha{
+    margin-top: 100px;
+    color: #FF383E;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75px;
+}
+
+.fonte-branca{
+    color: #FFF;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75px;
+}
+
+.fonte-margin-paginas{
+    margin-top: 31px;
+}
+
+header{
+    background-image: url("../imagens/imagem_topo.png");
+    background-position: center;
+    height: 550px;
+}
+
+.header-paginas{
+    height: 331px;
+    background-size: cover;
+}
+
+.topo {
+    text-align:center;
+}
+.img_logo{
+    margin-top: 60px;
+    width: 380px;
+}
+
+.texto-top{
+    width: 404px;
+    margin: auto;
+}
+
+button{
+    width: 249px;
+    height: 83px;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+.button-fonte-grande{
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.button-fonte-pequena{
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+}
+.alinhamento-centro{
+    width: 404px;
+    margin: auto;
+    text-align:center;
+    padding: 30px;
+}
+footer{
+    background-image: url("../imagens/fundo_footer.png");
+    padding-top: 1px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+p{
+    color: #FFFFFF;
+    font-family: "M PLUS Rounded 1c";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+p .negrito{
+    font-weight: 700;
+}
+
+.titulo-footer{
+    margin-top: 76px;
+}
+
+input{
+    margin-bottom: 23px;
+    width: 332px;
+    height: 60px;
+    background: #000000;
+    border: #000000;
+    border-radius: none;
+    color: #FFFFFF;
+    padding-left: 35px;
+
+    font-family: Anton;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+select{
+    margin-bottom: 23px;
+    width: 332px;
+    height: 60px;
+    background: #000000;
+    border: #000000;
+    border-radius: none;
+    color: #FFFFFF;
+    padding-left: 35px;
+
+    font-family: Anton;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-sizing: content-box;
+}
+
+input::placeholder{
+    color: #FFF;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+}
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-body{
+    background-color: #000000;
+    width: 377px;
+    height: 211px;
+}
+
+.modal-body h2{
+    color: #FFF;
+    font-family: Anton;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0;
+    text-align: left;
+    margin: 0px 0px 0px 30px;
+}
+
+.modal-body a{
+    text-decoration: none;
+}
+
+.modal-body button {
+    position: absolute;
+    margin-left: 346px;
+    color: #FFF;
+    font-family: Anton;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px; /* 150% */
+    width: 30px;
+    height: 30px;
+}
+
+.vermelha{
+    margin-top: 15px !important;
+    color: #FF383E !important;
+}
+
+table {
+    color: #FFFFFF;
+    border-collapse: collapse;
+    margin: auto;
+    text-align:center;
+}
+
+tbody {
+    background-color: #000000;
+}
+
+tbody td{
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
+tbody tr:first-child td{
+    border-top: none !important;
+}
+
+tbody tr td:first-child {
+    border-left: none !important;
+}
+
+th{
+    font-size: 32px;
+    padding: 10px 10px 0px 10px;
+}
+
+td {
+    font-size: 14px;
+}

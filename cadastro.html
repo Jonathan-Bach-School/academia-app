@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Lang significa linguagem ou seja qual é o idioma da página -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Academia APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+    <header class="header-paginas">
+        <div class="topo">
+            <a href="./index.html">
+                <img class="img_logo" src="imagens/logo.png">
+            </a>
+            <div class="texto-top">
+                <h1 class="fonte-vermelha fonte-margin-paginas">CADASTRE-SE</h1>
+            </div>
+        </div>
+    </header>   
+
+    <main>
+        <h2 class="fonte-branca">Crie sua conta</h2>
+        <div class="alinhamento-centro">
+            <form>
+                <input id="nome" type="text" placeholder="Nome">
+                <input id="email" type="email" placeholder="Email">
+                <input id="senha" type="password" placeholder="Senha">
+            </form>
+            <button class="button-fonte-pequena" onclick="salvarUsuario()">CADASTRAR</button>
+        </div>  
+
+
+        <div id="modal-cadastro" class="modal">
+            <div class="modal-body">
+                <button onclick="fechar()">X</button>
+                <a href="./novo_treino.html">
+                    <h2 class="vermelha">OBRIGADO POR SE CADASTRAR!</h2>
+                    <h2>VAMOS PARA O PRIMEIRO TREINO</h2>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="texto-top ">
+            <h1 class="fonte-vermelha">VAMOS FALAR SOBRE SUA SAÚDE</h1>
+            <div style="margin-top: 35px;">
+                <p>
+                    <strong class="negrito">CenterFit</strong>  <br> Avenida Presidente Kennedy, 397, Panambi, RS, Brazil
+                </p>
+                <p>
+                    <strong class="negrito">Tel.</strong>Tel. (55) 99133-9517 <br><strong class="negrito">E-mail:</strong> academiacenterfit@yahoo.com <br><strong class="negrito">Social:</strong> @centerfit_academiafuncional
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align: right;">
+            <a id="botao-whats" href="https://api.whatsapp.com/send?phone=5555999772707"><img src="imagens/whatsapp.png"></a>
+        </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
